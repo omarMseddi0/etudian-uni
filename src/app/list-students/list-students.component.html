@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="container">
+  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" routerLink="/add-student"> Add </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div>
+
+<table class="table table-stripped">
+    <thead class="list">
+        <th>Sr. No</th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Mot de Passe</th>
+        <th>Actions</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let student of students; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{student.nom}}</td>
+            <td>{{student.prenom}}</td>
+            <td>{{student.mot_de_passe}}</td>
+            <td>  <a routerLink="/edit/{{student.id_Etudiant}}" class="btn btn-success btn2">EDIT</a>    <button (click)="deleteStudent(student)" class="btn btn-danger"> Delete</button>  </td>
+        </tr>
+    </tbody>
+</table>
+<br> <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>

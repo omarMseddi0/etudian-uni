@@ -1,0 +1,9 @@
+p{
+    color: red;
+}
+.bg{
+    background-image: url('/assets/img/backgroundImg.jpg');
+    background-size: cover; /* make the background image cover the entire element */
+    background-repeat: no-repeat;
+    height: 100vh;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University home page</title>
+	<link rel="stylesheet" href="login.component.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-Yr5V7gp5xxW8zvuvYcMQ4Q4c4wF0b8IOvfvvjoX9Sgj+iLoGzMb8ELvTzYfUsB1JECwATW2Q2v+h/N1s9q3cig=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="background-image">
+		<br><br><br><br><br><br><br>
+		<form class="login-form">
+			<h2 style="color: rgb(0, 0, 0);">Connectez-vous</h2><br>
+			<label for="username"></label>
+			<input type="text" id="username" name="username" [(ngModel)]="username" placeholder="Votre nom">
+
+			<label for="password"></label>
+			<input type="password" id="password" name="password" [(ngModel)]="password" placeholder="Password">
+			<button type="submit" class="hero-btn" (click)="goToLogin()" style="background-color: #f44336;">Se connecter</button>
+		</form>
+	</section>
+</body>
+</html>

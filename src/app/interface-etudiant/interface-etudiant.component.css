@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* ajuster la hauteur en fonction du menu de navigation */
+  }
+  
+  .student-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .student-form label {
+    margin-right: 50px;
+    color: white ;
+  }
+  
+  .student-form select {
+    margin-right: 50px;
+    padding: 7px;
+    color:red ;
+  }
+  
+  .student-form button {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .student-form button:first-child {
+    margin-right: 20px;
+  }
+  .titre1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .hello{
+    text-align: center ;
+    margin-top: 50px;
+  }
+
+
+
+  .student-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3c3c3c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  

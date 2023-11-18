@@ -1,0 +1,136 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.button img {
+    width: 40px;
+    height: 40px;
+}
+
+span {
+    font-size: 14px;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 5px;
+    text-align: center;
+    width: 60px;
+}
+
+.heart-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('/assets/heart.jpg');
+    background-size: cover;
+}
+
+
+.Services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    height: 60%;
+    background-image: url(/assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+@media(max-width : 700px) {
+    .cat h1 {
+        font-size: 24px;
+    }
+}

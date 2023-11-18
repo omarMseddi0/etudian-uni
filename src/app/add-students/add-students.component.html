@@ -1,0 +1,74 @@
+<section class="addsection">
+  <style>
+    
+    .form {
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      background-color: #eee;
+    }
+
+    
+    .form-control {
+      margin: 10px;
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+
+    
+    .btn {
+      display: block;
+  margin: 0 auto;
+  text-align: center; 
+      padding: 10px;
+      cursor: pointer;
+      
+      width: 40%;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(194, 59, 25); 
+    }
+  </style>
+  <form [formGroup]="addForm" novalidate="" class="form">
+  <div class="row">
+    <div class="col-md-6">Nom</div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" name="nom" formControlName="nom">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">Prenom</div>
+    <div class="col-md-6">
+      <input class="form-control" type="text" name="prenom" formControlName="prenom">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">Mot de Passe</div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" name="mot_de_passe" formControlName="mot_de_passe">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">Specialiter</div>
+    <div class="col-md-6">
+      <select formControlName="id_Specialiter" name="id_Specialiter" class="form-control">
+        <option *ngFor="let spec of specialiters" [value]="spec.id_Specialiter">
+          {{ spec.nom_Specialiter }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-success" (click)="onSubmit()">
+        ADD STUDENT
+      </button>
+    </div>
+  </div>
+</form>
+</section>
+<br> <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>
